@@ -3,13 +3,17 @@ on: [push]
 jobs:
   hello_world_job:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: Testing
     steps:
-      - name: Hello world action step
+      - name: Testing step
         id: hello
         uses: SamiiRoebuck/phillips-hue-deploy-indicator@v1
         with:
-          who-to-greet: 'Sam'
+          bridge-ip: '192.168.0.18'
+          user: 'NJmFF20YcvFJi1Pc6TZPFfBCiSnNwoZZYQtbx20b'
+          lights: 'lights/2/state'
+          status: false
+
       # Use the output from the `hello` step
-      - name: Get the output time
-        run: echo "The time was ${{ steps.hello.outputs.time }}
+      - name: Get the output
+        run: echo "${{ steps.hello.outputs.response }}
