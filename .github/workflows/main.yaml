@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Testing step
         id: hello
-        uses: SamiiRoebuck/phillips-hue-deploy-indicator@v0.1.1
+        uses: SamiiRoebuck/phillips-hue-deploy-indicator@v0.1
         with:
           bridge-ip: '192.168.0.18'
           user: 'NJmFF20YcvFJi1Pc6TZPFfBCiSnNwoZZYQtbx20b'
