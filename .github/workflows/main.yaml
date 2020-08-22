@@ -11,7 +11,7 @@ jobs:
         with:
           bridge-ip: '192.168.0.18'
           user: 'NJmFF20YcvFJi1Pc6TZPFfBCiSnNwoZZYQtbx20b'
-          lights: 'lights/2/state'
+          light: 'lights/2/state'
           status: false
 
       # Use the output from the `hello` step
